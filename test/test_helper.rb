@@ -122,7 +122,6 @@ ActiveSupport::TestCase.class_eval do
     $stdout = old
   end
 
-  undef :assert_nothing_raised
   class << self
     undef :test
   end
