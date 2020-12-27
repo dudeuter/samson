@@ -13,7 +13,7 @@ group :preload do
   # AR extensions
   gem 'goldiloader'
   gem 'pagy'
-  gem 'audited'
+  gem 'audited', git: "https://github.com/yknx4/audited.git", branch: "patch-1" # https://github.com/collectiveidea/audited/pull/554
   gem 'soft_deletion'
   gem 'doorkeeper'
 end
@@ -112,7 +112,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest-rails', git: "https://github.com/blowmage/minitest-rails.git", branch: "master" # need >v6.0.0
+  gem 'minitest-rails'
   gem 'rails-controller-testing'
   gem 'maxitest'
   gem 'mocha'
